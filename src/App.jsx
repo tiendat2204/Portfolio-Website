@@ -42,25 +42,25 @@ const App = () => {
   const { scrollYProgress } = useScroll({ container: containerRef });
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
-  // useEffect(() => {
-  //   const handleDevToolsOpen = (e) => {
-  //     if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
-  //       e.preventDefault();
-  //     }
-  //   };
+  useEffect(() => {
+    const handleDevToolsOpen = (e) => {
+      if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+        e.preventDefault();
+      }
+    };
 
-  //   const handleContextMenu = (e) => {
-  //     e.preventDefault();
-  //   };
+    const handleContextMenu = (e) => {
+      e.preventDefault();
+    };
 
-  //   window.addEventListener("keydown", handleDevToolsOpen);
-  //   window.addEventListener("contextmenu", handleContextMenu);
+    window.addEventListener("keydown", handleDevToolsOpen);
+    window.addEventListener("contextmenu", handleContextMenu);
 
-  //   return () => {
-  //     window.removeEventListener("keydown", handleDevToolsOpen);
-  //     window.removeEventListener("contextmenu", handleContextMenu);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("keydown", handleDevToolsOpen);
+      window.removeEventListener("contextmenu", handleContextMenu);
+    };
+  }, []);
 
   return (
     <div className="h-screen w-full">

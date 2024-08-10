@@ -4,7 +4,7 @@ import { SiGmail } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 const Navbar = ({ scrollToTop }) => {
   return (
-    <nav className="fixed top-0 z-20 flex items-center justify-around gap-20 md:gap-72  w-full backdrop-blur-md h-16 ">
+    <nav className="fixed top-0 z-20 flex items-center justify-around gap-20 md:gap-72 w-full backdrop-blur-md h-16 ">
       <div className="flex flex-shrink-0 items-center">
           <img src={logo} alt="Logo" className="w-20 h-auto cursor-pointer" onClick={scrollToTop}/>
       </div>

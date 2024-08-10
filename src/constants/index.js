@@ -74,7 +74,7 @@ export const PROJECTS = [
   {
     title: "Portfolio Website",
     image: project3,
-    github: "",
+    github: "https://github.com/tiendat2204/Portfolio-Website",
     demo: "",
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
@@ -83,7 +83,7 @@ export const PROJECTS = [
   {
     title: "Vector-Clean Website",
     image: project4,
-    github: "",
+    github: "https://github.com/tiendat2204/Vector-Clean",
     demo: "",
     description:
       "A comprehensive e-commerce platform for selling shoe cleaning products, featuring product listings, shopping cart, user authentication.",
